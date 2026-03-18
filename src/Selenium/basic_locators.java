@@ -38,7 +38,7 @@ public class basic_locators {
 		//*[contains(@class="value")]/descendant::input
 
 
-		//driver.quit();
+		driver.quit();
 
 
 	}
