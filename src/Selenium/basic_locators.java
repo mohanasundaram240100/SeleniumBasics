@@ -15,8 +15,8 @@ public class basic_locators {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
-		//List<WebElement> headerlink = driver.findElements(By.xpath("//li[@class='nav-li']"));
-		//List<WebElement> headerlink =driver.findElements(By.className("nav-li"));
+		//List<WebElement> headerlinks = driver.findElements(By.xpath("//li[@class='nav-li']"));
+		//List<WebElement> headerlinks =driver.findElements(By.className("nav-li"));
 		//System.out.println("Number of header links: " + headerlinks.size());
 
 		/*WebElement language = driver.findElement(By.xpath("//div[text()=\"EN\"]"));
