@@ -40,8 +40,8 @@ public class WindowHandling {
 
 		//Method2: Using for-each loop
 
-		for (String winIDs : windowIDs) {
-
+		for (String winIDs : windowIDs) 
+		{
 			driver.switchTo().window(winIDs);
 			System.out.println(driver.getTitle());
 		}
