@@ -17,8 +17,11 @@ public static void main (String[] args) {
 		driver.manage().window().maximize();
 		driver.get("https://iconplc.com");
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2)); //implicit wait
+		//Implicit Wait
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2)); 
 
+		
+		//Explicit Wait
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("\"//*[@title='Home']/ancestor::div[1]\"")))); //explicit wait
 
