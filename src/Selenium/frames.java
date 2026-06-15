@@ -35,6 +35,15 @@ public class frames {
 		
 		driver.switchTo().window(childWindow);
 		System.out.println("Child Window Title: " + driver.getTitle());
+		
+		driver.switchTo().frame(0);
+		System.out.println("Frame Title: " + driver.getTitle());
+		
+		driver.switchTo().frame("frameName");
+		System.out.println("Frame Title: " + driver.getTitle());
+		
+		driver.switchTo().defaultContent();
+		System.out.println("Default Content Title: " + driver.getTitle());
 
 		
 	}
