@@ -40,6 +40,9 @@ public class WindowHandling {
 		driver.getTitle();
 		System.out.println(driver.getTitle());
 
+		
+		
+		
 		//Method2: Using for-each loop
 
 		for (String winIDs : windowIDs) 
