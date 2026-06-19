@@ -30,7 +30,14 @@ public class dropDowns {
 		Select select2 = new Select(year);
 		select2.selectByValue("1990");
 		
-		driver.quit();
+		//Bootstrap drop down
+		driver.get("https://www.hyrtutorials.com/p/bootstrap-dropdowns-practice.html");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));	
+		
+		
+		
+		
+		//driver.quit();
 		
 	}
 
