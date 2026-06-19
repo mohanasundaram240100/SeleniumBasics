@@ -2,10 +2,12 @@ package Selenium;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowHandling {
@@ -27,7 +29,7 @@ public class WindowHandling {
 		//Since the Set collection does not allow duplicate values, we can convert the Set collection to a List collection to access the window IDs using index values
 
 		//Method1: Using ArrayList
-		ArrayList<String> windowList = new ArrayList<>(windowIDs);
+		List<String> windowList = new ArrayList<>(windowIDs);
 		String ParentWindowID = windowList.get(0); //parent window ID
 		String ChildWindowID = windowList.get(1); //child window ID
 
@@ -48,6 +50,12 @@ public class WindowHandling {
 
 
 
+		driver.get("https://www.google.com/");
+		driver.switchTo().newWindow(WindowType.TAB); //to open a new tab
+		driver.get("https://www.facebook.com/");
+		
+		driver.switchTo().newWindow(WindowType.WINDOW); //to open a new window
+		driver.get("https://www.facebook.com/");
 
 
 
